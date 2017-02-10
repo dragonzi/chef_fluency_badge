@@ -15,7 +15,7 @@ elsif node['platform_family']=="debian"
 end
 
 package 'apache2' do
-	package_name 'httpd'
+	package_name package
 	action :install
 end
 
